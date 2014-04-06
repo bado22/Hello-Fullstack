@@ -1,0 +1,36 @@
+p.lead{
+	margin-bottom:1%;
+}
+
+.guess-section{
+	max-width: 100%;
+}
+
+.guessbox{
+	padding: 9px 14px;
+	margin-bottom: 14px;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+}
+
+.gamebox{
+	padding: 9px 14px;
+	margin-bottom: 14px;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+}
+
+.startoverhighlight{
+	background: green;
+	color: white;
+}
+
+#panda{
+	border: 2px solid black;
+	max-width: 100%;
+	margin: 0 auto;
+	width: 332px;
+	height:265px;
+}
