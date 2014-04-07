@@ -9,7 +9,6 @@ Calculator.prototype.push = function(input){
 
 Calculator.prototype.plus = function(){
 	this.checkNumStash()
-	if(this.nums.length === 0) throw "calculator is empty";
 	var firstNum = this.nums.pop(-1);
 	var secondNum = this.nums.pop(-1);
 	this.display = secondNum + firstNum;
@@ -46,4 +45,10 @@ Calculator.prototype.value = function(){
 
 Calculator.prototype.checkNumStash = function(){
 	if(this.nums.length === 0) throw "calculator is empty";
+}
+
+Calculator.prototype.setVars = function(){
+	var firstNum = this.nums.pop(-1);
+	var secondNum = this.nums.pop(-1);
+	this.display = secondNum + firstNum;
 }

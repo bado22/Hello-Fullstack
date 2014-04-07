@@ -25,14 +25,11 @@ function paramify(hash){
 	var hashKeys = Object.keys(hash).sort();
 
 	for(i=0; i<hashKeys.length; i++){
-		if(hash.hasOwnProperty(hashKeys[i])){
-			var keyValuePair = hashKeys[i] + "=" + hash[hashKeys[i]];
+		var thisKey = hashKeys[i];
+		if(hash.hasOwnProperty(thisKey)){
+			var keyValuePair = thisKey + "=" + hash[thisKey];
 			hashLength++;
-			if (hashLength <= 1){
-				newStr += keyValuePair;
-			} else {
-				newStr += "&" + keyValuePair;
-			}
+			hashLength <= 1 ? newStr += keyValuePair : newStr += "&" + keyValuePair;
 		}
 	}
 	return newStr;

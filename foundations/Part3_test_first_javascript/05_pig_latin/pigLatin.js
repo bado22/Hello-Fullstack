@@ -30,4 +30,3 @@ function translate(str){
 	}
 	return resultArr.join(" ");
 }
-
