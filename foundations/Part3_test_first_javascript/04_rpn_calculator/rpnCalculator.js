@@ -40,7 +40,7 @@ Calculator.prototype.times = function(){
 	this.nums[this.nums.length] = this.display;
 }
 
-Calculator.prototype.value = function(input){
+Calculator.prototype.value = function(){
 	return this.display;
 }
 
