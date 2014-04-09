@@ -1,13 +1,9 @@
 function Temperature(temp){
 	var f = temp;
-	var c;
-}
-
-Temperature.prototype = {
-	setFahrenheit: function(temp){f = temp;},
-	setCelcius: function(temp){c = temp; },
-	fahrenheit: function(){return f === undefined ? c2f(c) : f;},
-	celcius: function(){return c === undefined ? f2c(f) : c;}
+	this.setFahrenheit = function(temp){f = temp;};
+	this.setCelcius = function(temp){f = c2f(temp);};
+	this.fahrenheit = function(){return f;};
+	this.celcius = function(){return f2c(f);};
 }
 
 function f2c(f){
