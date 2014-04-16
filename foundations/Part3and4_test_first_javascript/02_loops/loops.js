@@ -15,7 +15,7 @@ function sum(arr){
 	var newSum = 0;
 	for(var i=0 ; i<arr.length ; i++){
 		newSum += arr[i];
-	}	
+	}
 	return newSum;
 }
 
@@ -37,12 +37,10 @@ function paramify(hash){
 
 function factorial(n){
 	var sum = 1;
-	if(n === 0){ 
+	if(n === 0){
 		return 1;
 	} else {
-		for(var i=1; i<=n; i++){
-			sum *= i;
-		}
+		return n * factorial(n-1);
 	}
 	return sum;
 }
